@@ -1,0 +1,324 @@
+Southern New Hampshire University
+Project One
+Joseph Opheim
+CS-300
+Professor Alex Cohen
+2/16/2025
+
+
+
+
+
+
+
+
+
+Include string
+Include fstream
+Include algorithm
+Include vector
+Include sstream
+Include “csvparser file”
+Include iomanip
+
+READING FILE
+CREATE method void load_courses(String csvPath, dataStructure)
+CALL to open file ‘filename’
+IF return value is -1
+	PRINT “File not found!” << endl;
+	CLOSE file
+ELSE IF file found
+	WHILE NOT EOF
+		READ each line
+		IF parameters < 2
+			PRINT “File formatted incorrectly” << endl;
+			CONTINUE
+		//FIX ME
+//need to figure the else part about parameters more than 2
+		//mental note
+		END IF
+	END WHILE
+	CLOSE file
+END IF
+CLOSE file
+LOADING / HOLDING INFORMATION
+
+CREATE struct Course
+	String course_id
+	String course_name
+	String prerequisites
+VECTOR 
+Vector<Course>load_courses(String csvPath)
+For (int i = 0; i<file.rowCount(); i++)
+CREATE data structure for collection of courses
+	Course course
+	Course.course_id = file[i][0]
+	course.name = file[i][1]
+	WHILE NOT E.O.L
+		course.prerequisites = file[i][n]
+	course.push_back(course)
+//looked at my old pseudocode from the vector assignment but I was unclear 
+//and did the exact assignment code. I now see the picture of the overall assignment
+HASH TABLE
+CREATE Hashtable
+	Node struct
+		Course course
+		Unsigned int key
+	Vector<Node>nodes
+	INITIALIZE size of table
+	Unsigned int (int key)
+END 	
+//inserting
+Void Hashtable::Insert(course, course)
+	Unsigned key = hash
+	Node.atkey
+	IF node != nullptr
+		ASSIGN node(keybid)
+	ELSE IF node = UINT MAX
+		Node key = key
+		Node next = nullptr
+		Node bid = bid
+	ELSE
+		WHILE node != nullptr
+			Node next = new node
+	END IF
+END METHOD
+//loading
+Void load_courses(String csvPath, Hashtable* hashtable)
+	//looping to read every row of the file 
+	FOR (unsigned int I = 0; i < file.rowCount(), i++
+		CREATE data struct and add to courses
+		Course course
+		Course.course_id = file[i][0]
+		Course.name = [i][1]
+		WHILE NOT E.O.L
+			Course.prerequisites = file[i][n]
+		END WHILE
+		Hashtable->insert(course)
+	END FOR
+END METHOD
+
+TREE TIME
+CREATE BinarySearchTree* bst
+	BST = new BinarySearchTree()
+Course course
+CREATE void BinarySearchTree::add_node(node* node, course course)
+	IF root = null
+		Root = new node(bid)
+	
+ELSE
+		Add node(root, bid)
+	END IF
+	IF  node < root
+		ADD node to left
+		IF there is no left node
+			THIS->node = left
+		END IF
+	END IF
+	IF node > root
+		ADD node to right
+		IF there is no right node
+		THIS->node = right
+	END IF
+END 
+
+Void load_courses(String csvPath, BinarySearchTree* BST)
+//again we loop to read the rows of the file
+	FOR unsigned int i = 0; I < file.rowCount(); i++
+		CREATE data struct to add to courses
+		Course course
+		Course.course_id = file[i][0]
+		Course.course_name = file[i][1]
+		WHILE NOT E.O.L
+			Course.prerequisites = file[i][n]
+		END WHILE
+		BST->Insert(course)
+	END FOR
+END
+
+PRINTING / DISPLAY
+VECTOR
+CREATE void print_course_info(vector<course>courses, String course_id)
+	String input
+	PRINT “Please enter course id:” << endl;
+	CIN << input
+	WHILE vector is not empty
+		IF input == course_id
+			PRINT “Course:” << course.course_id << “Course Name:” << course_name << endl;
+			//while loop for prerequisites
+			WHILE prerequisites = true
+				PRINT “ Prerequisites:” << prerequisites << endl;
+			END WHILE
+		ELSE IF input != course_id
+			PRINT “Sorry! Please enter a valid course identification number!” << endl;
+		END IF
+END WHILE
+END
+HASHTABLE
+CREATE void hashTable print_all
+	String input
+	Cin << input
+	ASSIGN key = course_id
+	IF current node = key
+		RETURN course
+		//the display method was provided this is if we
+		//need to create our own
+		Course_display(nodes[key].course)
+	END IF
+	IF node->null
+		RETURN null
+	ELSE
+		WHILE node != null
+			IF key = course_id
+				RETURN course
+				Course_display(nodes[key].course)
+			END IF
+			Point next node
+		END WHILE
+	END IF
+END
+TREE TIME
+CREATE void print_course_information(Tree < course> courses, String course_id)
+	String input
+	PRINT “ Please enter course identification”
+	CIN << input
+	Current node = root
+	WHILE current != null
+		IF course.course_id = current
+			RETURN current
+			PRINT “Course ID:” << course_id << endl;
+			PRINT “Course Name:” << course_name << endl;
+			WHILE (prerequisites = true)
+				PRINT “Prerequisites:” << course.prerequisites << endl;
+			END WHILE
+		END IF
+		IF course_id < root
+			SET current = left
+		ELSE
+			SET current = right
+		END IF
+	END WHILE
+END
+
+PRINT SORTED LIST
+CREATE sorted_print(course)
+CREATE int partition(vector<course>&courses, int begin, int end)
+	Int low = begin // first index
+	Int high = end //last index
+	Int pivot = begin + end – begin / 2
+	BOOLEAN
+		DONE = false
+		WHILE != done
+WHILE bids.atpivot.title compare bids.athigh.title
+<0
+--high
+			END WHILE
+If low >= high
+Bool true
+ELSE
+Swap bids low and high
+++low
+--high
+			END IF
+	END WHILE
+Return high
+CREATE Void quicksort(vector<Bid>& bids, int begin, int end)
+IF begin is greater than or equal to the end
+RETURN IF no bids to sort
+Mid = partition(bids, begin, end)
+Quicksort(bids, begin, mid)
+Quicksort(bids, mid + 1, end)
+	END IF
+END
+Void selectionsort (vector<Bi>& bids)
+Int size_t = bids size
+FOR unsigned pos = 0, pos < size t – 1, ++pos
+Min = pos
+FOR unsigned j = pos + 1, j < size t, ++j
+IF bids at j compare to bids at min < 0
+Min = j
+		END IF
+IF min != pos
+Swap bids position at minimum
+		END IF
+	     END FOR
+	END FOR
+END
+CREATE void course_display(course course)
+	PRINT course.course_id << “:” << course_name << “|” << course.prerequisites << endl;
+	FOR (int i = 0; i < courses.size; ++i)
+		Course_display(courses[i]//tree
+	END FOR
+END
+CREATE BinarySearchTree::inOrder(node* node)
+	IF node!= null
+		Check left side first
+		inOrder(node->left)
+		PRINT  course.course_id << ": " << course_name << " | " << course.prerequisites << endl; 
+check next right leaf 
+inOrder(node->right) 
+cout << course.course_id << ": " << course_name << " | " << course.prerequisites << endl
+	END IF
+END
+
+
+
+MAIN MENU
+SET choice = 0
+WHILE choice != 9
+	PRINT “Please choose one of the following:” << endl;
+	PRINT “Number 1: Load files” << endl << “Number 2: Print in alphanumeric order” << endl << “Number 3: Print course name and prerequisites” << endl << “Number 4: Exit” << endl;
+	Case 1: load_courses(course file, data struct) 
+	Case 2: Sorted_print(courses) 
+		CALL sorted_print 
+	Case 3: print_course_information(course_id)
+	Case 4: END program
+END
+
+The vector is simple to implement and is faster when it comes to reading the file and loading course objects, but it is slower for searching and printing courses in order due to it trying to sort within itself or trying to search for a specific course. Until the program finds the match, it must search through each item. The hash table has a fast search and easy to print but it also requires sorting for it to print in order. Hash tables do not allow the table to be sorted so to print in alphanumeric order as the program specifies, we would have to get each value, sort it, and then print it.  Now with the binary search tree, it maintains itself with order which makes it the best choice to use for printing in order. The search time is O(h) where ‘h’ would represent the height of the tree. 
+	There are many advantages and disadvantages between the three. The binary search tree is the best option because it is most efficient as it maintains the data and allows for faster searches (O(log n)). The tree also provides a more efficient way for the sorting that the program requires (alphanumeric). Now, it does get a bit harder to implement a binary search tree, but the advantages outweigh the vector and hash table in this situation. 
+VECTOR	LINE COST	NUMBER OF TIMES	TOTAL
+CREATE VECTOR	1	1	1
+FOR EACH LINE IN FILE	1	n	n
+CREATE VECTOR COURSE ITEM	1	n	N
+WHILE LOOP PREREQUISITES	1	n	n
+ADD PREREQUISITES	1	n	n
+PUSHBACK	1	N	N
+			
+HASH TABLE	LINE COST	NUMBER OF TIMES	TOTAL
+CREATE TABLE	1	1	1
+INSERT	0	0	0
+CREATE KEY	1	n	n
+IF NO KEY FOUND	1	n	n
+ASSIGN NODE TO KEY	1	n	n
+ELSE	1	n	n
+ASSIGN TO UNIT MAX	4	n	4n
+ELSE	1	n	n
+NEXT OPEN NODE	1	n	n
+ADD NEW NODE TO END	1	n	n
+FOR EACH LINE IN FILE	1	n	n
+CREATE VECTOR COURSE ITEM	1	n	n
+WHILE LOOP PREREQUISITES	1	n	n
+ADD PREREQUISITES	1	n	n
+INSERT COURSE ITEM	1	n	n
+			
+BINARY SEARCH TREE	LINE COST	NUMBER OF TIMES	TOTAL
+ADD NODE	0	0	0
+IF ROOT IS NULL, THEN ADD ROOT	1	1	1
+IF NODE < ROOT THEN ADD LEFT	1	n	n
+IF NO LEFT NODE	1	n	n
+THIS NODE  = LEFT	1	n	n
+IF NODE > ROOT THEN ADD RIGHT	1	n	n
+IF NO RIGHT NODE	1	n	n
+THIS NODE = RIGHT	1	n	n
+FOR EACH LINE IN FILE	1	n	n
+CREATE VECTOR COURSE ITEM	1	n	n
+WHILE LOOP PREREQUISITES	1	n	n
+ADD PREREQUISITES	1	n	n
+INSERT COURSE ITEM	1	n	n
+			
+RESULTS	TOTAL COST	RUNTIME	
+VECTOR	5n + 1	O(n)	
+HASHTABLE	16n + 1	O(n)	
+BINARY SEARCH TREE	11n + 2	O(n)	
+
