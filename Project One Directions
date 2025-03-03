@@ -1,0 +1,55 @@
+Scenario
+The academic advisors in the Computer Science department at ABCU are very happy with the pseudocode you completed. You are now prepared to expand the pseudocode to directly respond to the two items advising hopes to accomplish with this program. Remember, your program will need to do the following tasks:
+
+Print a list of all the computer science courses in alphanumeric order.
+For a given course, print out its title and prerequisites.
+You will write pseudocode to address each advisor’s requirements. You will do so for each of the data structures you explored in the previous assignments, including vector, hash table, and tree. Then you will perform a runtime analysis to determine which data structure will be the best to use when you begin coding in the next project.
+
+Directions
+In the milestones leading to this project, you wrote a description for the course object that will be stored in different data structures. To determine the running time of each of those data structures in this application, you must finish writing all the pseudocode for the rest of the code and perform a Big O analysis. 
+
+Specifically, you must address the following rubric criteria:
+
+Pseudocode
+
+Resubmit pseudocode from previous pseudocode assignments and update as necessary. In the previous assignments, you created pseudocode for each of the three data structures: vector, hash table, and tree. Be sure to resubmit the following pseudocode for each data structure:
+Design pseudocode to define how the program opens the file, reads the data from the file, parses each line, and checks for formatting errors.
+Design pseudocode to show how to create course objects so that one course object holds data from a single line from the input file.
+Design pseudocode that will print out course information and prerequisites.
+Create pseudocode for a menu. The menu will need to perform the following actions:
+Option 1: Load the file data into the data structure. Note that before you can print the course information or the sorted list of courses, you must load the data into the data structure.
+Option 2: Print an alphanumerically ordered list of all the courses in the Computer Science department.
+Option 3: Print the course title and the prerequisites for any individual course.
+Option 9: Exit the program.
+Design pseudocode that will print out the list of the courses in the Computer Science program in alphanumeric order. Continue working with the Pseudocode Document linked in the Supporting Materials section. Note that you will design for the same three data structures that you have been using in your previous pseudocode milestones: vector, hash table, and tree. This time, you will create the final pieces of pseudocode that you will need for ABCU’s advising program. To complete this part of the process, do the following actions:
+Sort the course information by alphanumeric course number from lowest to highest.
+Print the sorted list to a display.
+Evaluation
+
+Evaluate the run time and memory of data structures that could be used to address the requirements. In previous assignments, you created pseudocode to define how the program opens the file, reads the data from the file, parses each line, and checks for formatting errors and to show how to create course objects so that one course object holds data from a single line from the input file.
+Using the pseudocode you wrote for the previous assignments, analyze the worst-case running time of each, reading the file and creating course objects, which will be the Big O value. This analysis should not include the pseudocode written for the menu or the search/print functions Print Course List (Option 2) above. To complete this part of the project, do the following actions:
+Specify the cost per line of code and the number of times the line will execute. Assume there are n courses stored in the data structure.
+Assume the cost for a line to execute is 1 unless it is calling a function, in which case the cost will be the running time of that function.
+Based on the advisor’s requirements, analyze each of the vector, hash table, and tree data structures. Explain the advantages and disadvantages of each structure in your evaluation.
+Now that you have analyzed all three data structures, make a recommendation for which data structure you plan to use in your code. Provide justification for your recommendation based on the Big O analysis results and your analysis of the three data structures.
+Milestones
+Resubmit your pseudocode for the Milestones One, Two, and Three assignments, and update it as necessary based on the feedback you received. In these assignments, you already created pseudocode for each of the three data structures:
+
+Milestone One: Vector 
+Milestone Two: Hash Table
+Milestone Three: Binary Search Tree
+Be sure to resubmit all three milestones that had the following components:
+
+Pseudocode designed to define how the program opens the file, reads the data from the file, parses each line, and checks for formatting errors 
+Pseudocode designed to show how to create course objects so that one course object holds data from a single line from the input file
+Pseudocode designed to find and print out course information and prerequisites for a single course
+This submission is graded with the Final Project Part I Rubric below.
+
+What to Submit
+To complete this project, you must submit the following item:
+
+Pseudocode and Runtime Analysis
+Your submission should be formatted in a double-spaced 1- to 2-page Word document that includes your completed pseudocode, your runtime analysis in a chart, and your analysis of both the advantages and disadvantages of each structure.
+
+Supporting Materials
+The following resources may help support your work on the project:
